@@ -1,0 +1,193 @@
+@import "variables";
+@import "mixins";
+
+/* Font */
+
+@font-face {
+  font-family: $fontfamily;
+  src: url('../fonts/CaviarDreams-webfont.eot');
+  src: url('../fonts/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CaviarDreams-webfont.woff2') format('woff2'),
+  url('../fonts/CaviarDreams-webfont.woff') format('woff'),
+  url('../fonts/CaviarDreams-webfont.ttf') format('truetype'),
+  url('../fonts/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.fontfamily {
+  font-family: $fontfamily;
+}
+
+body {
+  @extend .fontfamily;
+}
+
+hr {
+  background-color: $maincolor;
+  margin: 0;
+}
+
+h2 {
+  color: $maincolor;
+}
+
+/* Barre de navigation */
+
+.navbar-nav .nav-link {
+  color: $textedefond;
+}
+
+.navbar-brand {
+  color: $textedefond !important;
+}
+
+.active {
+  color: $secondcolor !important;
+}
+
+.barredenav {
+  background-color: $maincolor;
+  color: $secondcolor;
+  font-weight: bold;
+}
+
+/* Header */
+
+.fond {
+  width: 100%;
+  height: 50%;
+  padding: 15rem 0;
+  background-image: url(../img/img1.jpg);
+  background-size: cover;
+  @include background-size(cover);
+}
+
+/* Actualités */
+.actualites {
+  margin-top: $margin;
+  margin-bottom: $margin;
+
+}
+
+.img-border {
+  margin: -2px -2px -2px -2px;
+  &:hover {
+    border: solid 2px $maincolor;
+    margin: -4px -4px -4px -4px;
+  }
+}
+
+.papericon {
+  color: $maincolor;
+}
+
+/* Films de l'été */
+.filmsdelete {
+  background-color: $secondcolor;
+}
+
+/* Infos pratiques */
+.infos-pratiques {
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+.metro {
+  background-image: url("../img/metro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+  float: left;
+}
+
+.handicape {
+  background-image: url("../img/handicape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+  float: left;
+}
+
+/* Réseaux sociaux */
+.reseaux-sociaux {
+  background-color: $secondcolor;
+
+}
+
+.socialsmedia {
+  height: 64px;
+  width: 64px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+/* Bouton préinscription */
+
+.preinscri {
+  font-size: 1em;
+  background-color: $bleuvert;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  @include border-radius(0.10rem);
+}
+
+/* Carousel Films */
+
+#ThumbnailCarousel img {
+  height: 250px;
+}
+
+#ThumbnailCarousel div {
+  height: 250px;
+  width: 100%;
+}
+
+#ThumbnailCarousel.carousel {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.col-md-3 .img-thumbnail {
+  height: 100%;
+}
+
+.img-thumbnail:hover ~ .icone-affiche {
+  opacity: 1;
+
+}
+
+.icone-affiche:hover {
+  opacity: 1;
+}
+
+.icone-billet:hover {
+  color: $secondcolor;
+}
+
+.icone-info:hover {
+  color: $secondcolor;
+}
+
+.icone-affiche {
+  opacity: 0;
+  position: absolute;
+  font-size: 64px;
+  top: 30%;
+  left: 1%;
+  color: $maincolor;
+}
+
+/* Google map */
+
+#map {
+  height: 100%;
+}
+
+.col-md-6 > #map {
+  min-height: 200px;
+}

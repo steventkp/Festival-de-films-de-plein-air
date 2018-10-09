@@ -1,0 +1,15 @@
+//Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+
+}
+
+@mixin background-size($bgsize) {
+  -webkit-background-size: $bgsize;
+  -moz-background-size: $bgsize;
+  -o-background-size: $bgsize;
+  background-size:$bgsize;
+
+}
