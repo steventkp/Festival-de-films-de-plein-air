@@ -33,6 +33,7 @@ h2 {
   color: $maincolor;
 }
 
+
 /* Barre de navigation */
 
 .navbar-nav .nav-link {
@@ -48,7 +49,7 @@ h2 {
 }
 
 .barredenav {
-  background-color: $maincolor;
+  background-color: $secondcolor;
   color: $secondcolor;
   font-weight: bold;
 }
@@ -67,16 +68,34 @@ h2 {
 /* Actualités */
 .actualites {
   margin-top: $margin;
-  margin-bottom: $margin;
+}
+.suite, a :visited, a:active
+{
+  text-decoration: none;
+  color:$thirdcolor;
 
+  &:hover {
+    text-decoration: none;
+    color:$maincolor;
+  }
 }
 
+
+
 .img-border {
-  margin: -2px -2px -2px -2px;
+  height: 180px;
+  width: 280px ;
+  border : solid 2px $thirdcolor ;
   &:hover {
     border: solid 2px $maincolor;
-    margin: -4px -4px -4px -4px;
+
   }
+}
+
+.titre-actu {
+  color:$maincolor;
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 
 .papericon {
@@ -86,12 +105,19 @@ h2 {
 /* Films de l'été */
 .filmsdelete {
   background-color: $secondcolor;
+  border-bottom:2rem solid $secondcolor;
+  border-top:2rem solid $secondcolor;
+
 }
 
 /* Infos pratiques */
 .infos-pratiques {
-  margin-top: $margin;
-  margin-bottom: $margin;
+  border-top:2rem solid $fourthcolor;
+  border-bottom:2rem solid $fourthcolor;
+  background-color:$fourthcolor;
+}
+.content-infos{
+  color:$secondcolor;
 }
 
 .metro {
@@ -101,6 +127,8 @@ h2 {
   height: 24px;
   width: 24px;
   float: left;
+  margin-right: 10px;
+
 }
 
 .handicape {
@@ -110,11 +138,14 @@ h2 {
   height: 24px;
   width: 24px;
   float: left;
+  margin-right: 10px;
 }
 
 /* Réseaux sociaux */
 .reseaux-sociaux {
   background-color: $secondcolor;
+  border-bottom:2rem solid $secondcolor;
+  border-top:2rem solid $secondcolor;
 
 }
 
@@ -158,9 +189,11 @@ h2 {
 
 .img-thumbnail:hover ~ .icone-affiche {
   opacity: 1;
-
 }
-
+.img-thumbnail{
+  background-color: $secondcolor;
+  border-radius: 0.10rem;
+}
 .icone-affiche:hover {
   opacity: 1;
 }
@@ -186,6 +219,7 @@ h2 {
 
 #map {
   height: 100%;
+  border: 2px solid $maincolor;
 }
 
 .col-md-6 > #map {
