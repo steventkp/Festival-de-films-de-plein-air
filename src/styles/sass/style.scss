@@ -19,7 +19,9 @@
 .fontfamily {
   font-family: $fontfamily;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   @extend .fontfamily;
 }
@@ -38,10 +40,12 @@ h2 {
 
 .navbar-nav .nav-link {
   color: $textedefond;
+  font-size: 20px;
 }
 
 .navbar-brand {
   color: $textedefond !important;
+  font-size: 25px;
 }
 
 .active {
@@ -68,7 +72,7 @@ h2 {
 /* Slider */
 .slider {
   max-width: 100%;
-  min-height:97vh;
+  min-height:70vh;
   position: relative;
 }
 .slide1,.slide2,.slide3,.slide4,.slide5 {
@@ -142,7 +146,7 @@ h2 {
   }
 }
 
-.titre-actu {
+.titre{
   color:$maincolor;
   font-size: 22px;
   margin-bottom: 5px;
@@ -157,9 +161,33 @@ h2 {
   background-color: $secondcolor;
   border-bottom:2rem solid $secondcolor;
   border-top:2rem solid $secondcolor;
-
 }
 
+.content-descri-film{
+  padding-top:2rem;
+}
+.bo-film{
+  padding-top: 2.25rem;
+}
+.p-descri{
+  margin-bottom: 0;
+}
+.img-film {
+  height: 250px;
+  width: 180px ;
+  border : solid 2px $thirdcolor ;
+  &:hover {
+    border: solid 2px $maincolor;
+
+  }
+}
+.hr-film {
+    background-color: $maincolor;
+    margin: 30px -20px 20px;
+}
+.fiche-film{
+  margin-top: 10px;
+}
 /* Infos pratiques */
 .infos-pratiques {
   border-top:2rem solid $fourthcolor;
@@ -168,6 +196,10 @@ h2 {
 }
 .content-infos{
   color:$secondcolor;
+  white-space: normal;
+}
+.soulignement{
+  text-decoration:underline;
 }
 
 .metro {
