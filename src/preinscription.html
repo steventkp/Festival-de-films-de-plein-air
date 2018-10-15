@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Festival de films de plein air - Films</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Barre de navigation -->
+
+<nav class="navbar navbar-dark navbar-expand-lg barredenav">
+    <a class="navbar-brand" href="index.html">Festival de films de plein air</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="index.html">Accueil</a>
+            <a class="nav-item nav-link" href="news.html">Actualités</a>
+            <a class="nav-item nav-link" href="films.html">Films de l'été</a>
+            <a class="nav-item nav-link" href="index.html#infos">Infos pratiques</a>
+            <a class="nav-item nav-link preinscri" href="preinscription.html">Pré-inscriptions</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<!-- Films -->
+<div class="container">
+    <div class="row">
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="user_name"/><br>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="user_name"/><br>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email"/>
+                <p>
+                    Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br /><br/>
+                    <input type="radio" value="" id="" /> <label for="">Die hard le 5 août à 18h</label><br />
+                    <input type="radio" value="" id="" /> <label for="">Le diner de cons le 5 août à 21h</label><br />
+                    <input type="radio" value="" id="" /> <label for="">Retour vers le futur le 6 août à 19h</label><br />
+                    <input type="radio" value= id="" /> <label for="">Le Roilion le 6 août à 21h</label><br/>
+                    <input type="radio" value="" id="" /> <label for="">Les visiteurs le 7 août à 18h</label><br />
+                    <input type="radio" value="" id="" /> <label for="">Million dollar baby le 7 août à 21h</label><br />
+                    <input type="radio" value="" id="" /> <label for="">Pulp fiction le 8 août à 18h</label><br />
+                    <input type="radio" value="" id="" /> <label for="">La vie est belle le 8 août à 21h</label><br />
+                    <input type="radio" value="" id="" /> <label for="">The dark knight le 8 août à 23h</label><br />
+
+                </p>
+                <div>
+                    <label for="nombre">Nombre de personnes (vous compris)</label>
+                    <input type="number" id="nombre" max="10"/>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Association Festival de films de plein air<br>
+            35 boulevard de courcelles<br>
+            75008 PARIS<br>
+            &copy; 2018
+        </p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+<script type="text/javascript" src="./scripts/main.js"></script>
+
+
+</body>
+</html>
+

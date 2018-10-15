@@ -34,11 +34,6 @@ hr {
 h2 {
   color: $maincolor;
 }
-.bgimg{
-  background-image: url("../img/foule.jpg");
-  height: 100%;
-  width: 100%;
-}
 
 /* Barre de navigation */
 
@@ -70,9 +65,32 @@ h2 {
   height: 50%;
   padding: 15rem 0;
   background-image: url(../img/img1.jpg);
+  background-size: cover;}
+
+.bgimg{
+  position: relative;
+  background-image: url("../img/foule.jpg");
+  background-position: center;
   background-size: cover;
-  @include background-size(cover);
+  min-height: 650px;
 }
+
+span.intro {
+    background-color: $secondcolor;
+    color: $fourthcolor;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+.position-intro{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+/* Header page films*/
 
 
 
