@@ -19,8 +19,8 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
+        <div id="nav" class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Accueil <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="news.html">Actualités</a>
             <a class="nav-item nav-link" href="films.html">Films de l'été</a>
             <a class="nav-item nav-link" href="infos.html">Infos pratiques</a>
@@ -29,46 +29,40 @@
     </div>
 </nav>
 <!-- Header -->
-<header class="bgimg-prein">
+<header class="bgimg-infos">
     <div class="position-intro">
-        <span class="intro">Pré-inscription</span>
+        <span class="intro">Contactez-nous</span>
     </div>
 </header>
 <!-- Content -->
 <div class="container">
-    <div class="row preinscri-form">
-        <div>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="user_name"/><br>
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="user_name"/><br>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="user_email"/>
-                <p>
-                    Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br /><br/>
-                    <input type="radio" value="" id="" /> <label for="">Die hard le 5 août à 18h</label><br />
-                    <input type="radio" value="" id="" /> <label for="">Le diner de cons le 5 août à 21h</label><br />
-                    <input type="radio" value="" id="" /> <label for="">Retour vers le futur le 6 août à 19h</label><br />
-                    <input type="radio" value= id="" /> <label for="">Le Roilion le 6 août à 21h</label><br/>
-                    <input type="radio" value="" id="" /> <label for="">Les visiteurs le 7 août à 18h</label><br />
-                    <input type="radio" value="" id="" /> <label for="">Million dollar baby le 7 août à 21h</label><br />
-                    <input type="radio" value="" id="" /> <label for="">Pulp fiction le 8 août à 18h</label><br />
-                    <input type="radio" value="" id="" /> <label for="">La vie est belle le 8 août à 21h</label><br />
-                    <input type="radio" value="" id="" /> <label for="">The dark knight le 8 août à 23h</label><br />
-
-                </p>
-                <div>
-                    <label for="nombre">Nombre de personnes (vous compris)</label>
-                    <input type="number" id="nombre" max="10"/>
-                </div>
+    <div class="row contact">
+        <div class="container">
+            <form id="contact" action="" method="post" >
+                <fieldset>
+                    <input placeholder="Votre nom" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Votre adresse mail" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Votre tél" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Entrez votre message" tabindex="4" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+                </fieldset>
+            </form>
 
 
+        </div>
 
-
-            </div>
         </div>
     </div>
 </div>
+
 
 
 <!-- Footer -->

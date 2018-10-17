@@ -26,6 +26,12 @@ body {
   @extend .fontfamily;
 }
 
+a:-webkit-any-link {
+  color: $maincolor;
+  text-decoration: none;
+}
+
+
 hr {
   background-color: $maincolor;
   margin: 0;
@@ -49,7 +55,7 @@ h2 {
 }
 
 .active {
-  color: $secondcolor !important;
+  color: #FFF !important;
 }
 
 .barredenav {
@@ -74,11 +80,44 @@ h2 {
   background-size: cover;
   min-height: 650px;
 }
+.bgimg-actus{
+  position: relative;
+  background-image: url("../img/news.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.bgimg-films{
+  position: relative;
+  background-image: url("../img/proj.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  margin-bottom: 2rem;
+}
+
+.bgimg-infos{
+  position: relative;
+  background-image: url("../img/globe.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.bgimg-prein{
+  position: relative;
+  background-image: url("../img/foret.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  margin-bottom: 2rem;
+}
 
 span.intro {
     background-color: $secondcolor;
     color: $fourthcolor;
-    padding: 18px;
+    padding: 16px;
     font-size: 25px;
     letter-spacing: 10px;
   }
@@ -90,8 +129,6 @@ span.intro {
   text-align: center;
   color: #000;
 }
-/* Header page films*/
-
 
 
 /* Actualités */
@@ -107,8 +144,6 @@ span.intro {
     color:$maincolor;
   }
 }
-
-
 
 .img-border {
   height: 180px;
@@ -130,6 +165,11 @@ span.intro {
   color: $maincolor;
 }
 
+.article{
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+
 /* Films de l'été */
 .filmsdelete {
   background-color: $secondcolor;
@@ -137,8 +177,7 @@ span.intro {
   border-top:2rem solid $secondcolor;
 }
 
-.content-descri-film{
-  padding-top:2rem;
+.content-descri-films{
 }
 .bo-film{
   padding-top: 2.25rem;
@@ -152,16 +191,36 @@ span.intro {
   border : solid 2px $thirdcolor ;
   &:hover {
     border: solid 2px $maincolor;
-
   }
 }
+
 .hr-film {
     background-color: $maincolor;
     margin: 30px -20px 20px;
 }
-.fiche-film{
+
+.fiche-film {
   margin-top: 10px;
 }
+
+
+.lien-prein:hover {
+  color: $secondcolor;
+  text-decoration: none!important;
+}
+
+.lien-prein{
+  font-size: 1em;
+  background-color: $fourthcolor;
+  color: $secondcolor;
+  text-transform: uppercase;
+  text-align: center;
+  border: solid 2px $maincolor;
+  font-weight: bold;
+  text-decoration: none!important;
+}
+
+
 /* Infos pratiques */
 .infos-pratiques {
   border-top:2rem solid $fourthcolor;
@@ -184,7 +243,6 @@ span.intro {
   width: 24px;
   float: left;
   margin-right: 10px;
-
 }
 
 .handicape {
@@ -196,6 +254,68 @@ span.intro {
   float: left;
   margin-right: 10px;
 }
+
+.contact{
+  max-width:400px;
+  width:100%;
+  margin: auto;
+  position:relative;
+  border: solid 1 px;
+}
+#contact {
+  background:$fourthcolor;
+  padding:25px;
+  margin:50px 0;
+}
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact textarea:hover {
+  -webkit-transition:border-color 0.3s ease-in-out;
+  -moz-transition:border-color 0.3s ease-in-out;
+  transition:border-color 0.3s ease-in-out;
+}
+
+#contact textarea {
+  height:200px;
+  max-width:100%;
+  resize:none;
+  width: 500px;
+}
+
+#contact button[type="submit"] {
+  cursor:pointer;
+  width:100%;
+  border:none;
+  background:$secondcolor;
+  color:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+  font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+  background:$maincolor;
+  -webkit-transition:background 0.3s ease-in-out;
+  -moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+  outline:0;
+  border:1px solid #999;
+}
+
+::-webkit-input-placeholder {
+  color:#888;
+}
+
 
 /* Réseaux sociaux */
 .reseaux-sociaux {
@@ -220,9 +340,12 @@ span.intro {
   color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
+  margin-left: 20rem;
   @include border-radius(0.10rem);
 }
-
+.preinscri-form{
+  margin-bottom: 2rem;
+}
 /* Carousel Films */
 
 #ThumbnailCarousel img {
@@ -270,6 +393,10 @@ span.intro {
   left: 1%;
   color: $maincolor;
 }
+.icone-affiche > a:active {
+  text-decoration: none;
+  color: $secondcolor;
+}
 
 /* Google map */
 
@@ -281,3 +408,48 @@ span.intro {
 .col-md-6 > #map {
   min-height: 200px;
 }
+
+@media screen and (max-width: (576px))
+{
+/*Page d'accueil*/
+  span.intro {
+  padding:10px;
+  }
+
+  .preinscri{
+    margin-left: 0;
+  }
+  #ThumbnailCarousel div {
+    height: 250px;
+    width: 100%;
+    margin-left: 1px;
+  }
+
+}
+
+@media screen and (max-width: (768px))
+{
+
+  span.intro {
+    padding:10px;
+  }
+
+  .preinscri{
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: (992px))
+{
+
+  span.intro {
+    padding:10px;
+  }
+
+  .preinscri{
+    margin-left: 0;
+  }
+
+}
+
