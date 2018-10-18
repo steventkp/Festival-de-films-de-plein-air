@@ -412,6 +412,7 @@ fieldset {
 @media screen and (max-width: (576px))
 {
 /*Page d'accueil*/
+
   span.intro {
   padding:10px;
   }
@@ -428,8 +429,12 @@ iframe{
   width: 210px;
   height: 200px;
   }
-
+.img-border {
+    height: 130px;
+    width: 210px;
+  }
 }
+
 
 @media screen and (max-width: (768px))
 {
