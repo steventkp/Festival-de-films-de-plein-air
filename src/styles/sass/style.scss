@@ -103,6 +103,7 @@ h2 {
   background-position: center;
   background-size: cover;
   min-height: 400px;
+  margin-bottom: 2rem;
 }
 
 .bgimg-prein{
@@ -211,21 +212,25 @@ span.intro {
 
 .lien-prein{
   font-size: 1em;
-  background-color: $fourthcolor;
-  color: $secondcolor;
+  background-color: $secondcolor;
+  color: #CCCCCC;
   text-transform: uppercase;
   text-align: center;
-  border: solid 2px $maincolor;
   font-weight: bold;
   text-decoration: none!important;
+  letter-spacing: 10px;
+  padding: 2px;
+
+
 }
+
 
 
 /* Infos pratiques */
 .infos-pratiques {
-  border-top:2rem solid $fourthcolor;
-  border-bottom:2rem solid $fourthcolor;
-  background-color:$fourthcolor;
+  border-top:2rem solid #FFF;
+  border-bottom:2rem solid #FFF;
+  background-color:#FFF;
 }
 .content-infos{
   color:$secondcolor;
@@ -275,8 +280,6 @@ fieldset {
   width: 100%;
 }
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact textarea:hover {
-  -webkit-transition:border-color 0.3s ease-in-out;
-  -moz-transition:border-color 0.3s ease-in-out;
   transition:border-color 0.3s ease-in-out;
 }
 
@@ -300,23 +303,40 @@ fieldset {
 
 #contact button[type="submit"]:hover {
   background:$maincolor;
-  -webkit-transition:background 0.3s ease-in-out;
-  -moz-transition:background 0.3s ease-in-out;
   transition:background-color 0.3s ease-in-out;
 }
 
 #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
-#contact input:focus, #contact textarea:focus {
-  outline:0;
-  border:1px solid #999;
-}
-
 ::-webkit-input-placeholder {
   color:#888;
 }
+ form#contact {
+   margin-top: 1rem;
+ }
+#preinscription {
+  background:$fourthcolor;
+  padding:25px;
+  max-width: 400px;
+  margin-left:auto;
+  margin-right: auto;
+}
 
+#preinscription button[type="submit"] {
+  cursor:pointer;
+  width:100%;
+  border:none;
+  background:$secondcolor;
+  color:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+  font-size:15px;
+}
 
+.acces
+{
+  margin-bottom: 2rem;
+}
 /* Réseaux sociaux */
 .reseaux-sociaux {
   background-color: $secondcolor;
@@ -366,36 +386,9 @@ fieldset {
   height: 100%;
 }
 
-.img-thumbnail:hover ~ .icone-affiche {
-  opacity: 1;
-}
 .img-thumbnail{
   background-color: $secondcolor;
   border-radius: 0.10rem;
-}
-.icone-affiche:hover {
-  opacity: 1;
-}
-
-.icone-billet:hover {
-  color: $secondcolor;
-}
-
-.icone-info:hover {
-  color: $secondcolor;
-}
-
-.icone-affiche {
-  opacity: 0;
-  position: absolute;
-  font-size: 64px;
-  top: 30%;
-  left: 1%;
-  color: $maincolor;
-}
-.icone-affiche > a:active {
-  text-decoration: none;
-  color: $secondcolor;
 }
 
 /* Google map */
@@ -409,10 +402,12 @@ fieldset {
   min-height: 200px;
 }
 
+
+
+/* Media queries */
+
 @media screen and (max-width: (576px))
 {
-/*Page d'accueil*/
-
   span.intro {
   padding:10px;
   }
