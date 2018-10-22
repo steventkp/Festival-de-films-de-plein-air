@@ -130,7 +130,7 @@ function initMap() {
             }
         ]
     });
-    var image = '../../img/location-pointer.png';
+    var image = '../../festival/img/location-pointer.png';
     var marker = new google.maps.Marker({
         position: latLng,
         map: map,
