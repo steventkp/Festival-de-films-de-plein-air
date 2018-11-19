@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "imports/variables";
+@import "imports/mixins";
 
 /* Font */
 
@@ -242,6 +242,16 @@ span.intro {
 
 .metro {
   background-image: url("../img/metro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+  float: left;
+  margin-right: 10px;
+}
+
+.bus {
+  background-image: url("../img/bus.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 24px;
