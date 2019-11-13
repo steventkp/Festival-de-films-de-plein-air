@@ -48,7 +48,7 @@ gulp
 
 ## Built With
 
-* [GULP](https://gulpjs.com/) - Bundler
+* [GULP](https://gulpjs.com/) - Task runner
 * [BOOTSTRAP](https://getbootstrap.com/) - Framework CSS
 
 
