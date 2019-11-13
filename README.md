@@ -1,5 +1,5 @@
 
-# PROJET 7 - Analyser les besoins de votre client pour son Festival de films
+# PROJET 3 - Analyser les besoins de votre client pour son Festival de films
 
 Jennifer Viala est l'organisatrice du Festival des Films de Plein Air. Elle ambitionne de sélectionner et projeter des films d'auteur en plein air du 5 au 8 août au parc Monceau à Paris.
 
